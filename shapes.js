@@ -29,11 +29,11 @@ class Circle {
 }
 
 class Triangle {
-  // Implement the Triangle class (similar to Circle)
+  // Implement the Triangle class 
 }
 
 class Square {
-  // Implement the Square class (similar to Circle)
+  // Implement the Square class 
 }
 
 module.exports = ShapeFactory;
