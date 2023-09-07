@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const ShapeFactory = require('./lib/shapes'); 
+const ShapeFactory = require('./shapes'); 
 
 
 // users can add their input so i can make the logo
