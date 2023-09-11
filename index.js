@@ -1,9 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const ShapeFactory = require('./shapes'); 
+const { ShapeFactory } = require('./shapes'); // get stuff from shapes
 
-
-// users can add their input so i can make the logo
+// function to generate the logo
 async function generateLogo() {
   try {
     const userInput = await inquirer.prompt([
@@ -35,7 +34,7 @@ async function generateLogo() {
 
     const { text, textColor, shape, shapeColor } = userInput;
 
-    // Create a new shape using the ShapeFactory
+    // Create a new shape
     const shapeInstance = ShapeFactory.createShape(shape);
     shapeInstance.setColor(shapeColor);
 

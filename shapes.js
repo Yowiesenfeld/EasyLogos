@@ -23,7 +23,7 @@ class Circle {
   }
 
   render(text, textColor) {
-   const svg = `<svg width="300" height="200">
+    const svg = `<svg width="300" height="200">
       <circle cx="150" cy="100" r="50" fill="${this.color}" />
       <text x="150" y="120" fill="${textColor}" text-anchor="middle">${text}</text>
     </svg>`;
@@ -67,20 +67,6 @@ class Square {
     </svg>`;
     
     return svg;
-  }
-}
-class ShapeFactory {
-  static createShape(type) {
-    switch (type) {
-      case 'circle':
-        return new Circle();
-      case 'triangle':
-        return new Triangle();
-      case 'square':
-        return new Square();
-      default:
-        throw new Error('Invalid shape type');
-    }
   }
 }
 
