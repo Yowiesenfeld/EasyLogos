@@ -23,7 +23,7 @@ class Circle {
   }
 
   render(text, textColor) {
-    const svg = `<svg width="300" height="200">
+    const svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
       <circle cx="150" cy="100" r="50" fill="${this.color}" />
       <text x="150" y="120" fill="${textColor}" text-anchor="middle">${text}</text>
     </svg>`;
@@ -42,7 +42,7 @@ class Triangle {
   }
 
   render(text, textColor) {
-    const svg = `<svg width="300" height="200">
+    const svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
       <polygon points="150,50 100,150 200,150" fill="${this.color}" />
       <text x="150" y="120" fill="${textColor}" text-anchor="middle">${text}</text>
     </svg>`;
@@ -61,7 +61,7 @@ class Square {
   }
 
   render(text, textColor) {
-    const svg = `<svg width="300" height="200">
+    const svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
       <rect x="50" y="50" width="200" height="200" fill="${this.color}" />
       <text x="150" y="120" fill="${textColor}" text-anchor="middle">${text}</text>
     </svg>`;
